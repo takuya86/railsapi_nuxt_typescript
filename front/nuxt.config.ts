@@ -1,6 +1,6 @@
-import colors from 'vuetify/es5/util/colors'
+import { defineNuxtConfig } from '@nuxt/config'
 
-export default {
+export default defineNuxtConfig({
   mode: 'spa',
   /*
   ** Headers of the page
@@ -28,7 +28,7 @@ export default {
   ],
   plugins: [
   ],
-  Modules: [
+  buildModules: [
     '@nuxt/typescript-build',
     '@nuxtjs/vuetify',
     '@nuxtjs/axios',
@@ -40,20 +40,30 @@ export default {
     theme: {
       dark: false,
       themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+        colors: {
+          primary: "#1976D2",
+          secondary: "#424242",
+          accent: "#82B1FF",
+          error: "#FF5252",
+          info: "#2196F3",
+          success: "#4CAF50",
+          warning: "#FFC107",
+          danger: "#B71C1C",
+          gold: "#C9B037",
+          silver: "#D7D7D7",
+          bronze: "#6A3805",
+          tag: "#455A64",
+          thumup: "#BF360C",
+          chat: "#0091EA",
+          notebook: "#263238",
+          favorite: "#1B5E20",
+          medal: "#C9B037",
         }
       }
     }
   },
   build: {
-    extend (config, ctx) {
+    extend (config:any, ctx:any) {
     }
   }
-}
+})
