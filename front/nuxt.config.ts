@@ -1,6 +1,4 @@
-import { defineNuxtConfig } from '@nuxt/config'
-
-export default defineNuxtConfig({
+export default {
   mode: 'spa',
   /*
   ** Headers of the page
@@ -63,7 +61,7 @@ export default defineNuxtConfig({
     }
   },
   build: {
-    extend (config:any, ctx:any) {
+    extend (config, ctx) {
     }
   }
-})
+}
