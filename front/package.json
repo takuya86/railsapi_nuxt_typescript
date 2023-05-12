@@ -13,7 +13,8 @@
   "dependencies": {
     "nuxt": "^2.0.0",
     "@nuxt/typescript-runtime": "^0.4.0",
-    "@nuxtjs/axios": "^5.3.6"
+    "@nuxtjs/axios": "^5.3.6",
+    "typescript": "^4.4.4"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
